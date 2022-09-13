@@ -6,24 +6,32 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -31,7 +39,9 @@ html, body {
   font-size: 14px;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -48,7 +58,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -64,9 +75,94 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
 
 /*--------------------*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 170px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-128.85%, #000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000000 -128.85%, rgba(0, 0, 0, 0) 100%);
+  z-index: 99999999999999999;
+}
+
+header .container-wrapper {
+  max-width: 1638px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .header__menu1,
+header .header__menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu1__block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu1__block2 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu1__block3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu2__logo span {
+  display: block;
+}
+
+header .menu2__block1 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home {
+  background-image: url(../img/home-img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1638px;
+  margin: 0 auto;
+}
+
+.home__title h1 {
+  padding-top: 238px;
+  font-size: 70px;
+  line-height: 84px;
+  color: #ffffff;
+}
+
+.home__title a {
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+}
